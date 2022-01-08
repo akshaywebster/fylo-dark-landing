@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  /* the font families */
+  --ff-head: 'Raleway', sans-serif; /* Headings, Call-to-actions, Header Navigation */
+  --ff-body: 'Open Sans', sans-serif; /* for body */
+
+  /* color scheme */
+  --clr-hero-bg: hsl(217, 28%, 15%); /* for hero section & email box bg */
+  --clr-main-bg: hsl(218, 28%, 13%);
+  --clr-footer-bg: hsl(216, 53%, 9%);
+  --clr-testimonial-bg: hsl(219, 30%, 18%);
+  --clr-text-main: hsl(0, 0%, 100%);
+  /* --clr-main-margin:  */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-head);
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+p {
+  line-height: 21px;
+}
+
+body {
+  background-color: var(--clr-main-bg);
+  color: var(--clr-text-main);
+  font-family: var(--ff-body);
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  /* align-items: center; */
+}
+
+/* 
+=====================
+The Main Container
+=====================
+*/
+
+.container {
+  width: 90%;
+  /* max-width: ; */
+}
+
+/* 
+=====================
+The Navbar
+=====================
+*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  font-family: var(--ff-head);
+  font-size: 0.75rem;
+}
+
+img.logo-img {
+  width: 80px; /* for mobile */
+}
+
+.top-nav-items {
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.top-nav-item > a {
+  color: var(--clr-text-main);
+}
+
+/* 
+=====================
+The Hero
+=====================
+*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 90vh; */
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 720px;
+}
+
+.hero-text {
+  margin-top: 2.06rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.hero-subtext {
+  margin-top: 0.93rem;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cta-btn {
+  width: 15rem; /* dont forget to change this for desktop */
+  height: 3rem;
+  background: linear-gradient(134.79deg, #63e1d9 -42.11%, #34a0cd 100%);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 24px;
+  cursor: pointer;
+  border: none;
+  color: var(--clr-text-main);
+  font-size: 0.875rem;
+  font-family: var(--ff-head);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* 
+=====================
+Features Section
+=====================
+*/
+
+.features {
+  margin-top: 7.5rem;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.feature > i {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1.5rem;
+}
+
+.feature-subtext {
+  margin-top: 0.5rem;
+}
+
+/* 
+=====================
+Demo Section
+=====================
+*/
+.demo {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 160px;
+}
